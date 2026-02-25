@@ -116,8 +116,10 @@ knowledge-site-creator/
 
 ## 📊 示例网站
 
-- [五代十国历史工坊](https://five-dynasties-workshop.vercel.app) - 30 个历史知识点
-- [大模型术语学习工坊](https://llm-terms-workshop.vercel.app) - 30 个 AI 术语（示例）
+- [五代十国历史工坊](https://wudai.qiaomu.ai/) - 从后梁到后周，系统学习五代十国历史脉络
+- [设计美学学习工坊](https://designrule.qiaomu.ai/) - 掌握 CRAP 原则，提升设计品味
+- [词根词缀记忆工坊](https://word.qiaomu.ai/) - 通过词根拆解，高效记忆英语单词
+- [大模型术语学习工坊](https://llmwords.qiaomu.ai/) - AI 时代必备，30 个核心概念速览
 
 ## 🛠️ 技术栈
 
