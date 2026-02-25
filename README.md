@@ -35,9 +35,27 @@
 
 ### 安装
 
+#### 方法一：使用 npx skills（推荐）
+
 ```bash
-# 复制 skill 到 Claude Code skills 目录
+# 自动安装到 Claude Code
+npx skills add joeseesun/knowledge-site-creator
+```
+
+#### 方法二：手动安装
+
+```bash
+# 克隆仓库
+git clone https://github.com/joeseesun/knowledge-site-creator.git
+
+# 复制到 Claude Code skills 目录
 cp -r knowledge-site-creator ~/.claude/skills/
+```
+
+#### 方法三：直接复制（如果已有本地副本）
+
+```bash
+cp -r /path/to/knowledge-site-creator ~/.claude/skills/
 ```
 
 ### 使用

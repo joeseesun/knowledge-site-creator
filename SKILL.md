@@ -1,5 +1,5 @@
 ---
-skill: knowledge-site-creator
+name: knowledge-site-creator
 description: 一句话生成任何领域的知识学习网站。AI自动理解主题、创作内容、生成页面、部署上线。适用于任何需要系统学习的知识领域：进化心理学、大模型术语、化学元素、历史事件等。
 user_invocable: true
 ---
