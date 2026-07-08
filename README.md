@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude-Code-7C3AED)](https://www.anthropic.com)
+[![Hermes Agent](https://img.shields.io/badge/Hermes-Agent-6366F1)](https://github.com/NousResearch/hermes-agent)
 
 ## ✨ 特性
 
@@ -29,38 +30,39 @@
 
 ### 前置要求
 
-- Claude Code CLI
+- Hermes Agent 或 Claude Code CLI
 - Node.js 18+
-- Vercel CLI（可选，用于部署）
+- Vercel CLI（用于部署）
+- Pillow（Python，用于生成 PWA 图标）
+- jq（用于 JSON 处理）
 
 ### 安装
 
-#### 方法一：使用 npx skills（推荐）
+#### Hermes Agent 安装（推荐）
 
 ```bash
-# 自动安装到 Claude Code
+# 克隆到 Hermes skills 目录
+mkdir -p "$HERMES_HOME/skills/creative"
+git clone https://github.com/joeseesun/qiaomu-knowledge-site-creator.git \
+  "$HERMES_HOME/skills/creative/knowledge-site-creator"
+
+# 依赖安装
+npm install -g vercel   # 或使用项目自带的 vercel
+pip install pillow
+# Windows Git Bash: 安装 jq
+# macOS: brew install jq
+# Linux: apt install jq / dnf install jq
+```
+
+#### Claude Code 安装
+
+```bash
 npx skills add joeseesun/knowledge-site-creator
-```
-
-#### 方法二：手动安装
-
-```bash
-# 克隆仓库
-git clone https://github.com/joeseesun/knowledge-site-creator.git
-
-# 复制到 Claude Code skills 目录
-cp -r knowledge-site-creator ~/.claude/skills/
-```
-
-#### 方法三：直接复制（如果已有本地副本）
-
-```bash
-cp -r /path/to/knowledge-site-creator ~/.claude/skills/
 ```
 
 ### 使用
 
-在 Claude Code 中直接说：
+在 Hermes Agent 或 Claude Code 中直接说：
 
 ```
 生成一个进化心理学学习网站
@@ -128,7 +130,7 @@ knowledge-site-creator/
 - **存储**：LocalStorage（进度管理）
 - **PWA**：manifest.json + Service Worker
 - **部署**：Vercel（一键部署）
-- **AI**：Claude Code（内容创作）
+- **AI**：Hermes Agent / Claude Code（内容创作）
 
 ## 📝 核心原则
 

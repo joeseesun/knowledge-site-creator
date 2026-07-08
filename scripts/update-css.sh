@@ -34,7 +34,7 @@ echo "📊 文件大小：$(wc -c < "$CSS_SOURCE") bytes"
 echo ""
 
 # 查找所有 workshop 项目
-WORKSHOPS_DIR="/Users/joe/Dropbox/code"
+WORKSHOPS_DIR="${KNOWLEDGE_SITE_OUTPUT_DIR:-$HOME/hermes-generated-sites}"
 UPDATED_COUNT=0
 SKIPPED_COUNT=0
 FAILED_COUNT=0

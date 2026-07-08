@@ -3,8 +3,9 @@
     {
       "name": "knowledge-site-creator",
       "path": "SKILL.md",
-      "description": "一句话生成任何领域的知识学习网站。AI自动理解主题、创作内容、生成页面、部署上线。",
-      "tags": ["content-creation", "web-development", "education", "ai-automation"],
+      "description": "一句话生成任意主题的知识学习网站（HTML/CSS/JS/PWA/SEO）。AI自动完成：主题分析→知识数据生成→页面编码→Vercel部署→返回链接。支持学科知识/技术术语/历史文化/科学概念/设计美学等领域。",
+      "version": "1.0.0",
+      "tags": ["content-creation", "web-development", "education", "ai-automation", "pwa", "seo"],
       "author": {
         "name": "Joe (向阳乔木)",
         "url": "https://github.com/joeseesun"
@@ -12,11 +13,13 @@
       "examples": [
         "生成一个进化心理学学习网站",
         "创建量子力学基础概念网站",
-        "做个中医经络穴位学习工坊"
+        "做个中医经络穴位学习工坊",
+        "生成一个博弈论入门学习网站"
       ],
       "requirements": {
-        "tools": ["vercel", "python3", "PIL"],
-        "platforms": ["macos", "linux"]
+        "tools": ["vercel", "python", "PIL", "jq", "node"],
+        "scripts": ["scripts/gen-html.py", "scripts/update-css.sh"],
+        "platforms": ["windows", "macos", "linux"]
       }
     }
   ]

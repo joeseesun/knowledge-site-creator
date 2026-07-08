@@ -1,0 +1,11 @@
+timestamp	skill	round	dim1_fm	dim2_flow	dim3_fail	dim4_ckpt	dim5_concrete	dim6_refs	dim7_arch	dim8_real	dim9_anti	score_total	change	summary
+2026-06-15T01:59:05+08:00	knowledge-site-creator	baseline	7	8	5	3	7	10	7	9	4	69.7	0	baseline before darwin optimization
+2026-06-15T01:59:05+08:00	knowledge-site-creator	R1	7	8	8	8	7	10	8	9	8	79.9	+10.2	dim3+dim4+dim9: checkpoints, anti-patterns, failure modes
+2026-06-15T02:14:33+08:00	knowledge-site-creator	R2	7	9	8	8	9	10	9	9	8	85.7	+5.8	dim5: data template quick-ref + dim2: workflow overview table
+2026-06-15T02:27:38+08:00	knowledge-site-creator	R3	8	9	9	8	9	10	9	9	8	87.6	+1.9	dim3: copiable commands in every failure cell + dim1: trigger word expansion
+2026-06-15T02:54:15+08:00	knowledge-site-creator	R4	8	9	9	9	9	10	9	9	9	88.8	+1.2	dim4: checkpoint cmd-verification + dim9: +7 anti-patterns from real testing
+2026-06-28T13:43:45+08:00	knowledge-site-creator	R5	8	9	9	9	9	10	9	9	9	90.2	+1.4	dim5: cost section + dim3: rollback + dim2: gen-html.py verification + dim9: renumbered+2
+2026-06-29T20:41:33+08:00	knowledge-site-creator	R6	8	9	9	9	10	10	9	9	9	91.0	+0.8	dim2: checklist+batch update gen-html.py integration
+2026-06-29T20:43:53+08:00	knowledge-site-creator	R7	8	10	9	9	10	10	9	9	9	91.5	+0.5	dim6: plugin.json synced + orphan references linked
+2026-06-29T20:47:16+08:00	knowledge-site-creator	R8	8	10	9	9	10	10	10	9	9	92.0	+0.5	dim7: incident report moved to reference, -71 lines
+2026-06-29T20:56:17+08:00	knowledge-site-creator	R9	8	10	9	9	10	10	10	9	9	92.5	+0.5	dim7: version 2.0.0 + batch update to reference, -148 lines
